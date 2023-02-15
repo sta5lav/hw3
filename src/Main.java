@@ -5,6 +5,9 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
+        task7();
+        task8();
     }
 
     public static void task1 () {
@@ -62,5 +65,45 @@ public class Main {
         int whiteAll = white * classes;
         int brownAll = brown * classes;
         System.out.println("В школе, где " + classes + " классов, нужно " + whiteAll + " банок белой краски и " + brownAll + " банок коричневой краски");
+    }
+    public static void task6 () {
+        int banan = 80;
+        int bananAll = banan * 5;
+        int milk = 105;
+        int milkAll = milk * 2;
+        int iceCream = 100;
+        int iceCreamAll = iceCream * 2;
+        int eggs = 70;
+        int eggsAll = eggs * 4;
+        int result = bananAll + milkAll + iceCreamAll + eggsAll;
+        float kg = (float) result / 1000;
+        System.out.println(result + " грамм");
+        System.out.println(kg + " килограмм");
+    }
+    public static void task7 () {
+        int weight = 7;
+        int weightGramm = weight * 1000;
+        int minWeightPerDay = 250;
+        int maxWeightPerDay = 500;
+        int maxDay = weightGramm / minWeightPerDay;
+        int minDay = weightGramm / maxWeightPerDay;
+        int middleDay = (maxDay+minDay) / 2;
+        System.out.println("Максимум понадобится " + maxDay + " дней");
+        System.out.println("Минимум понадобится " + minDay + " дней");
+        System.out.println("В среднем понадобится " + middleDay + " дней");
+    }
+    public static void task8 () {
+        int masha = 67760;
+        int denis = 83690;
+        int kristina = 76230;
+        int newMasha = masha + (masha / 10);
+        int newDenis = denis + (denis / 10);
+        int newKristina = kristina + (kristina / 10);
+        int diffYearsMasha = (newMasha * 12) - (masha * 12);
+        int diffYearsDenis = (newDenis * 12) - (denis * 12);
+        int diffYearsKristina = (newKristina * 12) - (kristina * 12);
+        System.out.println("Маша теперь получает " + newMasha + " рублей. Годовой доход вырос на " + diffYearsMasha + " рублей");
+        System.out.println("Денис теперь получает " + newDenis + " рублей. Годовой доход вырос на " + diffYearsDenis + " рублей");
+        System.out.println("кристина теперь получает " + newKristina + " рублей. Годовой доход вырос на " + diffYearsKristina + " рублей");
     }
 }
